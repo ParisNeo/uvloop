@@ -4,8 +4,8 @@ vi = sys.version_info
 if vi < (3, 7):
     raise RuntimeError('uvloop requires Python 3.7 or greater')
 
-if sys.platform in ('cygwin', ):
-    raise RuntimeError('uvloop does not support Cygnus Windows at the moment')
+# if sys.platform in ('cygwin', ):
+#    raise RuntimeError('uvloop does not support Cygnus Windows at the moment')
 
 import os
 import os.path
